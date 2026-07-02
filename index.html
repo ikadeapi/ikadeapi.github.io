@@ -1,17 +1,144 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>
-    // سریع‌ترین ریدایرکت
-    window.location.replace("https://mokebrzblp.rozblog.com");
-  </script>
+<title>iCode API</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "IBM Plex Sans Arabic",sans-serif;
+}
+
+body{
+    background:#f5f5f7;
+    color:#1d1d1f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:700;
+}
+
+.subtitle{
+    color:#6e6e73;
+    margin-top:8px;
+    line-height:1.7;
+}
+
+.status{
+    margin:25px 0;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#eefaf1;
+    color:#1c8f3d;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    background:#22c55e;
+    border-radius:50%;
+}
+
+.info{
+    margin-top:20px;
+}
+
+.info div{
+    margin:12px 0;
+}
+
+.endpoint{
+    background:#f7f7f8;
+    padding:18px;
+    border-radius:14px;
+    margin-top:20px;
+    font-family:monospace;
+    white-space:pre-line;
+}
+
+.footer{
+    margin-top:35px;
+    text-align:center;
+    color:#86868b;
+    font-size:14px;
+}
+</style>
+
 </head>
-
 <body>
-  <p>در حال انتقال...</p>
+
+<div class="card">
+
+    <div class="logo">🚀 iCode API</div>
+
+    <p class="subtitle">
+        به API آی‌کده خوش آمدید.
+        <br>
+        این سرویس برای ارتباط برنامه‌ها با App Store آی‌کده طراحی شده است.
+    </p>
+
+    <div class="status">
+        <div class="dot"></div>
+        API Online
+    </div>
+
+    <div class="info">
+        <div><b>Version:</b> v1.0</div>
+        <div><b>Response:</b> application/json</div>
+        <div><b>Authentication:</b> API Key</div>
+    </div>
+
+    <div class="endpoint">
+GET  /v1/apps
+
+GET  /v1/app/{id}
+
+GET  /v1/search
+
+GET  /v1/categories
+    </div>
+
+    <div class="endpoint">
+{
+  "success": true,
+  "service": "iCode API",
+  "status": "online"
+}
+    </div>
+
+    <div class="footer">
+        Powering the iCode App Store ❤️
+    </div>
+
+</div>
+
 </body>
 </html>
